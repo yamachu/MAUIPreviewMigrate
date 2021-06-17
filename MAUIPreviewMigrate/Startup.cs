@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
 using MAUIPreviewMigrate.Data;
 
 namespace MAUIPreviewMigrate
@@ -12,7 +12,6 @@ namespace MAUIPreviewMigrate
 		public void Configure(IAppHostBuilder appBuilder)
 		{
 			appBuilder
-				.UseFormsCompatibility()
 				.RegisterBlazorMauiWebView(typeof(Startup).Assembly)
 				.UseMicrosoftExtensionsServiceProviderFactory()
 				.UseMauiApp<App>()

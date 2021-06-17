@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MAUIPreviewMigrate.WinUI": {
+      "commandName": "AppContainer"
+    }
+  }
+}
